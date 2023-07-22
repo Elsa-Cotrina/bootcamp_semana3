@@ -1,0 +1,45 @@
+.text-animado {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: solid;
+
+    animation-name: texto-volador;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes texto-volador {
+    from{
+        margin-left: 100%;
+        width: 350px;
+        background-color: grey;
+        border: none;
+    }
+    to{
+        margin-left: -100%;
+        background-color: cornflowerblue;
+        color: darkslategrey;
+    }
+}
+
+.img-animada{
+    animation-name: img-resize;
+    animation-duration:5s;
+    animation-iteration-count: infinite;
+}
+
+img { 
+    width: 300px;
+}
+
+@keyframes img-resize {
+    from{
+        border-color: solid green;
+        border-radius: 20px;
+        width: 500px;
+        height: 500px;
+    }
+    to{
+        border-radius: 50%;
+        width: 100px;
+    }
+}
